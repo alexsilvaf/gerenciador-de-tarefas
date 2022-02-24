@@ -1,7 +1,9 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {TarefasService} from "./shared";
+import {TarefaService} from "./shared";
 import {ListarTarefaComponent} from './listar';
+import {RouterModule} from "@angular/router";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -9,10 +11,12 @@ import {ListarTarefaComponent} from './listar';
     ListarTarefaComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    FormsModule
   ],
   providers: [
-    TarefasService
+    TarefaService
   ]
 })
 export class TarefasModule {
