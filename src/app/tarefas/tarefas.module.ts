@@ -1,11 +1,13 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {TarefasService} from "./shared";
-
+import {ListarTarefaComponent} from './listar';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    ListarTarefaComponent
+  ],
   imports: [
     CommonModule
   ],
@@ -13,4 +15,5 @@ import {TarefasService} from "./shared";
     TarefasService
   ]
 })
-export class TarefasModule { }
+export class TarefasModule {
+}
